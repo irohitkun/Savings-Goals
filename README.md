@@ -1,32 +1,79 @@
 # Savings Goals
 
-A local-only savings goal tracker. No UPI/payment integration — your money stays exactly
-where it already is (your bank account). This app just tracks progress toward goals you
-define, with contributions you log manually.
+Savings Goals is a simple, privacy-focused Android application that helps you track your progress toward personal savings goals.
 
-## Stack
-- Kotlin + Jetpack Compose (Material 3)
-- Room (local SQLite) — all data stays on-device, nothing leaves your phone
-- No network permissions requested at all
+Whether you're saving for a new phone, laptop, vacation, emergency fund, or any other milestone, the app provides an easy way to record your contributions and monitor your progress without connecting to your bank account or payment services.
+
+---
 
 ## Features
-- Multiple goals at once (name, emoji, target amount)
-- Progress bar + percentage per goal
-- Manual "Add money" entries with optional notes
-- Full contribution history per goal, swipe-free delete on any entry
-- Delete a goal (with confirmation) — cascades and removes its history
 
-## Opening the project
-1. Open Android Studio (Koala or newer recommended).
-2. **File → Open** → select the `SavingsGoals` folder.
-3. Let Gradle sync (it will generate the wrapper automatically if prompted).
-4. Run on an emulator or your device (minSdk 26 / Android 8.0+).
+- Create and manage multiple savings goals
+- Set a target amount for each goal
+- Personalize goals with custom emojis
+- Record savings contributions manually
+- View the complete contribution history for every goal
+- Track progress with visual progress bars and percentages
+- Delete individual contributions or entire goals
 
-## Where to extend next
-- `data/Goal.kt` has a `targetDateMillis` field already wired through the DB — the UI
-  just doesn't collect it yet. Add a date picker to `AddGoalDialog` in `GoalListScreen.kt`
-  to use it (e.g. show "12 days left" on the card).
-- If you ever want semi-automated logging without touching real payment rails, you could
-  add a `NotificationListenerService` that reads your UPI app's notification text (amount +
-  merchant) and pre-fills the "Add money" dialog for you to confirm — still no money
-  actually moves through the app, it just saves you typing.
+---
+
+## Privacy
+
+Your financial data belongs to you.
+
+Savings Goals does **not**:
+
+- Require an account
+- Collect personal information
+- Display advertisements
+- Track user activity
+- Sync data to the cloud
+- Request network permissions
+
+All data is stored locally on your device.
+
+---
+
+## Installation
+
+### Download the latest release
+
+Download the latest APK from the [Releases](../../releases) page and install it on your Android device.
+
+### Build from source
+
+```bash
+git clone https://github.com/irohitkun/Savings-Goals.git
+cd Savings-Goals
+./gradlew assembleDebug
+```
+
+You can also open the project directly in Android Studio and run it on an emulator or a physical Android device.
+
+---
+
+## Built With
+
+- Kotlin
+- Jetpack Compose
+- Material 3
+- Room Database
+- Android Jetpack Navigation
+- Kotlin Symbol Processing (KSP)
+
+---
+
+## Contributing
+
+Contributions are welcome.
+
+If you find a bug, have a feature request, or would like to improve the project, feel free to open an issue or submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
+
+See the [LICENSE](LICENSE) file for details.
