@@ -88,4 +88,4 @@ If you find a bug, have a feature request, or would like to improve the project,
 
 This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
 
-See the [LICENSE](LICENSE) file for details.
+See the [LICENSE](LICENSE.md) file for details.
