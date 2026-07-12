@@ -18,6 +18,18 @@ Whether you're saving for a new phone, laptop, vacation, emergency fund, or any 
 
 ---
 
+## Screenshots
+
+| Overview | Create Goal |
+|----------|-------------|
+| <img src="screenshots/overview.jpg" width="250"> | <img src="screenshots/create-goal.jpg" width="250"> |
+
+| All Goals | Goal History |
+|-----------|--------------|
+| <img src="screenshots/all-goals.jpg" width="250"> | <img src="screenshots/goal-history.jpg" width="250"> |
+
+---
+
 ## Privacy
 
 Your financial data belongs to you.
